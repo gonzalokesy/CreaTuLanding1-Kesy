@@ -1,0 +1,25 @@
+.productImage {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.cartRow {
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s;
+}
+
+.cartRow:hover {
+    background-color: #f8f9fa;
+}
+
+.trashIcon {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.trashIcon:hover {
+    transform: scale(1.1);
+}

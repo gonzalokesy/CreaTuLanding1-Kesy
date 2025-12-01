@@ -15,7 +15,7 @@ function ItemDetail({ item }) {
                     <p className="text-muted">{item.category}</p>
                     <p>{item.description}</p>
                     <h3 className="text-primary">${item.price}</h3>
-                    <ItemCount valorInicial={0} />
+                    <ItemCount item={item} />
                 </Col>
             </Row>
         </Container>
