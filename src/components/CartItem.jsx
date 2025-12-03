@@ -8,18 +8,16 @@ function CartItem({ item }) {
 
     return (
         <div className={`row align-items-center py-3 ${styles.cartRow}`}>
-            {/* Imagen del producto */}
+
             <div className="col-2 text-center">
                 <img src={item.thumbnail} alt={item.title} className={styles.productImage} />
             </div>
 
-            {/* Titulo y ctaegoria del producto */}
             <div className="col-3">
                 <h5 className="mb-0 fs-6">{item.title}</h5>
                 <small className="text-muted">{item.category}</small>
             </div>
 
-            {/* Cantidad */}
             <div className="col-3 text-center">
                 <div className="d-flex align-items-center justify-content-center gap-2">
                     <Button variant="outline-secondary" size="sm" onClick={() => decrementQuantity(item.id)} disabled={item.count <= 1}>-</Button>
@@ -28,13 +26,11 @@ function CartItem({ item }) {
                 </div>
             </div>
 
-            {/* Precio unitario y subtotal */}
             <div className="col-2 text-center">
                 <div className="fw-bold">${item.price * item.count}</div>
                 <small className="text-muted">${item.price} c/u</small>
             </div>
 
-            {/* Botón para el tacho de basur acon SVG de w3school */}
             <div className="col-2 text-center">
                 <button
                     className="btn btn-link p-0"
