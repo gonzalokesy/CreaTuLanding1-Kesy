@@ -4,11 +4,10 @@
 }
 
 .cardMain {
-    width: 18rem;
+    width: 100%;
     height: 100%;
     border: none;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    color: #2D3748;
     transition: transform 0.2s;
 }
 
@@ -22,7 +21,6 @@
     height: 100%;
 }
 
-.cardTitle,
 .cardText {
     color: #2D3748;
 }
@@ -30,4 +28,23 @@
 .btnMain {
     margin-top: auto;
     align-self: center;
+}
+
+
+
+.cardImg {
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+
+.cardTitle {
+    color: #2D3748;
+    height: 50px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }

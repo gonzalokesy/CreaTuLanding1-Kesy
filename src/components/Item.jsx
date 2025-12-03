@@ -6,7 +6,7 @@ import styles from '../styles/Item.module.css'
 function Item({ item }) {
     return (
         <Card className={styles.cardMain} >
-            <Card.Img variant="top" src={item.thumbnail} />
+            <Card.Img variant="top" src={item.thumbnail} className={styles.cardImg} />
             <Card.Body className={styles.cardBody}>
                 <Card.Title className={styles.cardTitle}>{item.title}</Card.Title>
                 <Card.Text className={styles.cardText}>
