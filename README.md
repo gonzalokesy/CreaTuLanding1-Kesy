@@ -1,16 +1,49 @@
-# React + Vite
+# ✨ Nova - E-commerce de Hardware
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una Single Page Application (SPA) de comercio electrónico desarrollada con React.js, enfocada en la venta de componentes de hardware y periféricos. Utiliza Firebase como backend para la gestión de productos y órdenes de compra.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React.js**: Librería principal para la interfaz de usuario.
+- **Vite**: Entorno de desarrollo rápido.
+- **React Router DOM**: Para la navegación SPA.
+- **Firebase (Firestore)**: Base de datos NoSQL para productos y órdenes.
+- **React Bootstrap**: Estilizado y componentes UI responsivos.
+- **SweetAlert2**: Notificaciones y feedback al usuario.
 
-## React Compiler
+## ⚙️ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Catálogo de Productos**: Vista de productos traídos dinámicamente desde Firestore.
+- **Filtrado por Categoría**: Navegación fluida entre tipos de componentes.
+- **Detalle de Producto**: Vista individual con nombre, categoría, descripción, precio y control de stock.
+- **Carrito de Compras**:
+  - Agregar productos con validación de stock.
+  - Modificar cantidades en tiempo real.
+  - Eliminar ítems o vaciar el carrito.
+  - Cálculo automático de totales.
+- **Checkout**: Formulario de finalización de compra con validación y generación de ID de orden de compra.
 
-## Expanding the ESLint configuration
+## 📦 Instalación y Ejecución
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Si deseas correr este proyecto localmente:
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/gonzalokesy/CreaTuLanding1-Kesy
+    ```
+
+2.  **Instalar dependencias:**
+    ```bash
+    npm install 
+    ```
+
+3.  **Ejecutar el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+
+4.  Abrir `http://localhost:5173/` en tu navegador.
+
+## 📝 Autor
+
+**Gonzalo Kesy** - Proyecto Final Coderhouse React Js.
